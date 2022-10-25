@@ -1,7 +1,7 @@
-package com.shop.springboot.web.domain.test;
+package com.shop.springboot.test.domain;
 
-import com.shop.springboot.domain.test.TestEntity;
-import com.shop.springboot.domain.test.TestEntityRepository;
+import com.shop.springboot.test.domain.TestEntity;
+import com.shop.springboot.test.domain.TestEntityRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.shop.springboot.domain.test;
+package com.shop.springboot.test.domain;
 
 import lombok.Builder;
 import lombok.Getter;

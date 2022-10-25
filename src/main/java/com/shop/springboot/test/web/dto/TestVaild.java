@@ -1,4 +1,4 @@
-package com.shop.springboot.web.dto;
+package com.shop.springboot.test.web.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
