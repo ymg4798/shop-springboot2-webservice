@@ -1,15 +1,17 @@
 package com.shop.springboot.board.domain;
 
+import com.shop.springboot.board.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
 @Entity
-public class Board extends BaseTimeEntity{
+public class Board extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,11 +26,11 @@ public class Board extends BaseTimeEntity{
 
     private String modifiedBy;
 
-    @Column(length = 1)
-    private char openYn;
+    @Column(length = 1, columnDefinition = "char(1)")
+    private String openYn;
 
     @Builder
-    Board(String title, String content, String createBy, char openYn) {
+    public Board(String title, String content, String createBy, String openYn) {
         this.title = title;
         this.content = content;
         this.createBy = createBy;
